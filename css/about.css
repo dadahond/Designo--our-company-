@@ -35,16 +35,12 @@
   width: 476px;
 }
 
-.section-2 {
-  background-image: url(../images/shared/desktop/bg-pattern-leaf.svg);
+main {
+  background-image: url(../images/shared/desktop/bg-pattern-leaf.svg),
+    url(../images/shared/desktop/bg-pattern-leaf.svg);
   background-repeat: no-repeat;
-}
-
-.section-3 {
-  background-image: url(../images/shared/desktop/bg-pattern-leaf.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  overflow: hidden;
+  position: relative;
+  background-position: left 300px, right 1700px;
 }
 
 .world-class,
@@ -89,7 +85,7 @@
 
 .world-class img {
   width: 476px;
-  border-radius: 8p 0 0 8px;
+  border-radius: 8px 0 0 8px;
 }
 
 .real-deal img {

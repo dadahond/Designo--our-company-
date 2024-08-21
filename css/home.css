@@ -35,6 +35,14 @@
   margin-top: 16rem;
 }
 
+body {
+  background-image: url(../images/shared/desktop/bg-pattern-leaf.svg),
+    url(../images/shared/desktop/bg-pattern-leaf.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: left 600px, right 1900px;
+}
+
 .design-cards-left {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(../images/home/desktop/image-web-design-large.jpg);
@@ -124,7 +132,7 @@
   background-repeat: no-repeat;
 }
 
-.section-1,
+/* .section-1,
 .section-2 {
   background-image: url(../images/shared/desktop/bg-pattern-leaf.svg);
   background-repeat: no-repeat;
@@ -133,7 +141,7 @@
 .section-2 {
   background-position: right;
   overflow: hidden;
-}
+} */
 
 .lets-talk-main {
   background-color: var(--peach-color);

@@ -25,3 +25,7 @@ footer {
 .footer-main .navigation {
   padding-top: 14.4rem;
 }
+
+.central-office a {
+  color: var(--white-color);
+}

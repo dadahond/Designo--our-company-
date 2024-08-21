@@ -1,0 +1,27 @@
+footer {
+  background-color: var(--black-color);
+}
+
+.footer-main-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7.2rem;
+}
+
+.address {
+  display: flex;
+  font-size: var(--p-fs);
+  line-height: var(--p-lh);
+  opacity: 0.5;
+  column-gap: 20rem;
+}
+
+.social-media-icons {
+  display: flex;
+  column-gap: 1.6rem;
+  align-items: end;
+}
+
+.footer-main .navigation {
+  padding-top: 14.4rem;
+}

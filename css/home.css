@@ -1,5 +1,6 @@
 @import "./global.css";
 @import "./nav.css";
+@import "./footer.css";
 .hero {
   background-color: var(--peach-color);
   border-radius: 15px;
@@ -131,6 +132,7 @@
 
 .section-2 {
   background-position: right;
+  overflow: hidden;
 }
 
 .lets-talk-main {
@@ -160,32 +162,4 @@
   font-weight: 400;
   width: 45.9rem;
   padding: 2rem 0 4.6rem 0;
-}
-
-footer {
-  background-color: var(--black-color);
-}
-
-.footer-main-bottom {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 7.2rem;
-}
-
-.address {
-  display: flex;
-  font-size: var(--p-fs);
-  line-height: var(--p-lh);
-  opacity: 0.5;
-  column-gap: 20rem;
-}
-
-.social-media-icons {
-  display: flex;
-  column-gap: 1.6rem;
-  align-items: end;
-}
-
-.footer-main .navigation {
-  padding-top: 14.4rem;
 }

@@ -1,6 +1,10 @@
 @import "./global.css";
 @import "./nav.css";
 @import "./footer.css";
+.hero-tablet {
+  display: none;
+}
+
 .about-hero {
   display: flex;
 }
@@ -26,7 +30,8 @@
 .about-hero-left p {
   font-size: var(--p-fs);
   line-height: var(--p-lh);
-  width: 458px;
+  max-width: 558px;
+  width: 100%;
   padding-top: 3.2rem;
 }
 
@@ -41,6 +46,10 @@ main {
   background-repeat: no-repeat;
   position: relative;
   background-position: left 300px, right 1700px;
+}
+
+.world-class-tablet {
+  display: none;
 }
 
 .world-class,
@@ -78,7 +87,8 @@ main {
 .real-deal-left p {
   font-size: var(--p-fs);
   line-height: var(--p-lh);
-  width: 458px;
+  max-width: 758px;
+  width: 100%;
   padding-top: 3.2rem;
   color: var(--black-color);
 }
@@ -91,6 +101,10 @@ main {
 .real-deal img {
   width: 476px;
   border-radius: 0 8px 8px 0;
+}
+
+.real-deal-tablet {
+  display: none;
 }
 
 .countries {
@@ -151,4 +165,113 @@ main {
   font-weight: 400;
   width: 45.9rem;
   padding: 2rem 0 4.6rem 0;
+}
+
+/* HERO-MEDIA-RESPONSE */
+
+@media screen and (max-width: 900px) {
+  .about-hero {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .about-hero img {
+    border-radius: 0 8px 8px 0;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .about-hero .hero-desktop {
+    display: none;
+  }
+  .about-hero .hero-tablet {
+    display: flex;
+  }
+  .about-hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 0.1rem 1rem 4rem 1rem;
+  }
+  .about-hero-left h2 {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .world-class {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  .world-class img,
+  .real-deal img {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .world-class-desktop {
+    display: none;
+  }
+  .world-class-tablet {
+    display: flex;
+  }
+  .world-class-right,
+  .real-deal-left {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .world-class-right h2,
+  .real-deal-left h2 {
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .world-class-right p,
+  .real-deal-left p {
+    text-align: center;
+    padding-top: 2rem 2rem 0 2rem;
+  }
+  .real-deal-desktop {
+    display: none;
+  }
+  .real-deal-tablet {
+    display: flex;
+  }
+  .real-deal {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .countries {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .lets-talk-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .lets-talk-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lets-talk-left p {
+    padding: 2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  margin: 0 auto;
 }

@@ -21,10 +21,32 @@
   }
 }
 
-.navigation img {
+.logo-nav {
   width: 20.2rem;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .footer-main .navigation .menu-nav a {
   color: var(--white-color);
+}
+
+@media screen and (max-width: 600px) {
+  .menu-nav {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .navigation {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navigation {
+    padding: 4rem 0;
+  }
 }

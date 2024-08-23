@@ -8,7 +8,7 @@ footer {
   padding-bottom: 7.2rem;
 }
 
-.address {
+.footer-main-bottom .address {
   display: flex;
   font-size: var(--p-fs);
   line-height: var(--p-lh);

@@ -63,13 +63,30 @@ body {
   border-radius: 1.5rem;
 }
 
-.design-cards-left:hover,
-.design-cards-right-up:hover,
+.design-cards-left:hover {
+  background-image: linear-gradient(
+      rgba(244, 69, 5, 0.5),
+      rgba(241, 86, 20, 0.5)
+    ),
+    url(../images/home/desktop/image-web-design-large.jpg);
+  cursor: pointer;
+}
+
+.design-cards-right-up:hover {
+  background-image: linear-gradient(
+      rgba(244, 69, 5, 0.5),
+      rgba(241, 86, 20, 0.5)
+    ),
+    url(../images/home/desktop/image-app-design.jpg);
+  cursor: pointer;
+}
+
 .design-cards-right-bottom:hover {
   background-image: linear-gradient(
-    rgba(244, 69, 5, 0.5),
-    rgba(241, 86, 20, 0.5)
-  );
+      rgba(244, 69, 5, 0.5),
+      rgba(241, 86, 20, 0.5)
+    ),
+    url(../images/home/desktop/image-graphic-design.jpg);
   cursor: pointer;
 }
 
@@ -94,7 +111,7 @@ body {
   letter-spacing: 7px;
   font-weight: 800;
   text-align: center;
-  color: var(--dark-gray-color);
+  color: var(--white-color);
   transition: 0.5s;
 }
 
